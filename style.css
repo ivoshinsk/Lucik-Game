@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #b3adad;
+    font-family: 'Nosifer', sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 2vmax;
+    background: linear-gradient(90deg, #880810, #f40f0f, #880810);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.game {
+    width: 750px;
+    height: 250px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+
+#lucik {
+    width: 50px;
+    height: 50px;
+    background-image: url(./images/lucik.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 201px;
+}
+
+#bonfire {
+    width: 30px;
+    height: 40px;
+    background-image: url(./images/bonfire.png);
+    background-size: 30px 40px;
+    position: relative;
+    top: 160px;
+    left: 720px;
+    animation: bonfireMov 1.4s infinite linear;
+}
+
+@keyframes bonfireMov {
+    0% {
+        left: 720px;
+    }
+    100%{
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 0.7s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 180px;
+    }
+    30% {
+        top: 140px;
+    }
+    50% {
+        top: 90px;
+    }
+    80% {
+        top: 140px;
+    }
+    100% {
+        top: 180px;
+    }
+}
