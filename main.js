@@ -24,10 +24,3 @@ let isAlive = setInterval (function() {
         alert("Game Over!")
     }
 }, 10)
-
-
-// const stop = docement.getElementById("stop");
-
-// function stop() {
-
-// }
