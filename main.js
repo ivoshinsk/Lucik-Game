@@ -1,5 +1,3 @@
-
-
 const lucik = document.getElementById("lucik");
 const bonfire = document.getElementById("bonfire");
 
